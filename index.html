@@ -12,7 +12,7 @@
     			<h1>Sandwich Maker</h1>
 		 	</div>
 		</div>				
-		<div class='container-fluid'>
+		<div class='container'>
 			<div class='row'>
 				<div class='.col-md-4 thumbnail text-center'>
 					<label for="bread">Bread Options:</label>
@@ -63,11 +63,16 @@
 						<input type="checkbox" name="condiments" value='None'> None
 					</div>	
 				</div>
-			<div class='text-center'>
-				<button id='btn' class='btn btn-success'>Click me for Total</button>
-			</div>
-			<p class='text-center'>Your Total is:</p>
-			<div id='sammieContainer' class='text-center'></div>
+				<div class='container'>
+					<div class='row'>
+						<!-- <div class='col-md-4 col-sm-6 thumbnail text-center'> -->
+						<div class='col-md-2 col-md-offset-5 thumbnail text-center'>	
+							<p class='border'>Submit Your Order</p>
+							<button id='btn' class='btn btn-success'>Submit</button>
+							<div id='sammieContainer' class='text-center'></div>				
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>		
 

@@ -5,7 +5,7 @@ var SandwichMaker = (function(oldSandwichMaker) {
   	"Goat": .5,
   	"Chevre": 5,
   	"Gruyere": 3,
-  	"None": 0
+  	"No Cheese": 0
   };
 
   // Augment the original object with another method
