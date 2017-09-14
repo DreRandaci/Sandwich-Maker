@@ -2,8 +2,8 @@ var SandwichMaker = (function(oldSandwichMaker) {
 
   // Private variable to store the different meat prices
   let meatPrices = { 
-  	"Panda": 65000,
-  	"Droggon": 400000,
+  	"Panda": 6,
+  	"Droggon": 4,
   	"Turkey": 1,
   	"None": 0
   };

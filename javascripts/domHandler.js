@@ -6,15 +6,25 @@ let bread = document.getElementById("bread");
 let veggies = document.getElementById("veggies");
 let btn = document.getElementById("btn");
 
-meat.addEventListener('change', meatBuilder)
-condiments.addEventListener('change', condimentBuilder)
-cheese.addEventListener('change', cheeseBuilder)
-bread.addEventListener('change', breadBuilder)
-veggies.addEventListener('change', veggieBuilder)
+meat.addEventListener('change', meatBuilder);
+condiments.addEventListener('change', condimentBuilder);
+cheese.addEventListener('change', cheeseBuilder);
+bread.addEventListener('change', breadBuilder);
+veggies.addEventListener('change', veggieBuilder);
 btn.addEventListener('click', (e) => {
+	clearDom();
 	writeToDom(sammieAndBreadCombinedPrice);
 });
 
+const writePrice = (price) => {
+	sammieContainer.innerHTML = `Total: $${price}`;
+};
+const clearDom = () => {
+	sammieContainer.innerHTML = '';
+};
 const writeToDom = (sammieAndBreadCombinedPrice) => {
-	sammieContainer.innerHTML = `Your sammie has ${checkedMeat}, ${checkedConds}, ${checkedCheese}, ${checkedBread} and ${checkedVeggie}. Your total is $${sammieAndBreadCombinedPrice}`;
-}
+	allCheckedItems.forEach(function(topping) {
+		sammieContainer.innerHTML += `<li>${topping}</li>`
+	});
+	sammieContainer.innerHTML += `Total: $${sammieAndBreadCombinedPrice}`;
+};

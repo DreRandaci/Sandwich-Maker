@@ -1,8 +1,18 @@
-input {
-	padding: 5em;
-	margin: 15px;
+li {
+	list-style: none;
 }
 
 #btn {
 	margin-bottom: 1em;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+#sammieContainer {
+	margin: 1em;
+}
+.border {
+	border-bottom: 1px solid black;
 }
